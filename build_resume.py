@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# python3 build_resume.py
 
 import subprocess
 import shutil
@@ -7,7 +8,8 @@ from datetime import date
 from pathlib import Path
 
 TEX_FILE = Path("henry_routson_resume.tex")
-OUTPUT_PDF = Path(f"henry_routson_resume_{date.today().isoformat()}.pdf")
+HISTORY_DIR = Path("tex_resume_history")
+OUTPUT_PDF = HISTORY_DIR / f"henry_routson_resume_{date.today().isoformat()}.pdf"
 AUX_EXTENSIONS = [".aux", ".log", ".out"]
 
 def find_pdflatex() -> str | None:
@@ -22,6 +24,7 @@ def find_pdflatex() -> str | None:
     return None
 
 def build(pdflatex: str) -> None:
+    HISTORY_DIR.mkdir(exist_ok=True)
     job_name = TEX_FILE.stem
     # AI : run twice so cross-references resolve correctly
     for _ in range(2):

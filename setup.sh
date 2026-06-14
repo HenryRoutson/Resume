@@ -1,16 +1,10 @@
- 
- #!/bin/zsh
-# Installs system dependencies and builds the resume PDF.
-
+#!/bin/zsh
 set -e
 
+# AI : assert MacTeX is installed — full distro, no extra packages needed
 if ! command -v pdflatex &>/dev/null; then
-  echo "Installing basictex..."
-  brew install --cask basictex
-  eval "$(/usr/libexec/path_helper)"
+  echo "pdflatex not found. Install MacTeX: brew install --cask mactex" >&2
+  exit 1
 fi
-
-# AI : install packages that BasicTeX omits but our .tex requires
-sudo tlmgr install enumitem titlesec parskip
 
 python3 build_resume.py
