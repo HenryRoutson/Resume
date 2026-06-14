@@ -1,0 +1,176 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[margin=0.55in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{multicol}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue,
+  linkcolor=blue
+}
+
+% AI : section formatting - bold rule underline style
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{7pt}{3pt}
+
+\setlist[itemize]{noitemsep, topsep=2pt, leftmargin=1.1em}
+
+\setlength{\parskip}{3pt}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% ── Header ──────────────────────────────────────────────────────────────────
+\begin{center}
+  {\LARGE\bfseries Henry Routson} \\[4pt]
+  \href{mailto:Henry_Rou@ProtonMail.com}{Henry\_Rou@ProtonMail.com}
+  \quad|\quad 0419 108 859
+  \quad|\quad \href{https://www.linkedin.com/in/henryroutson/}{linkedin.com/in/henryroutson}
+\end{center}
+
+\noindent
+Extensive knowledge and experience in modern AI systems and Software Engineering.
+Currently working as an AI Engineer.
+
+\vspace{2pt}
+
+% ── Two-column body ──────────────────────────────────────────────────────────
+\setlength{\columnsep}{14pt}
+\begin{multicols}{2}
+
+% ── Education ────────────────────────────────────────────────────────────────
+\section{Education}
+
+\textbf{The University of Melbourne} \\
+Bachelor of Science, Computing and Software Systems --- \textit{Distinction}
+
+\textbf{The University of Melbourne} \\
+Master of Computer Science, AI --- \textit{in progress, part time}
+\begin{itemize}
+  \item NLP: Fine Tuning, Prompt Tuning, Transformers, Hugging Face
+\end{itemize}
+
+\textbf{Ballarat Grammar}
+\begin{itemize}
+  \item Academic scholarship
+  \item VCE: Software Development, Specialist \& Methods Mathematics, Chemistry, Physics
+\end{itemize}
+
+% ── Open-Source ───────────────────────────────────────────────────────────────
+\section{Open-Source Contributions}
+
+\textbf{Cached File Explorer} (Rust) \\
+\href{https://github.com/conaticus/FileExplorer/pull/47}{github $\cdot$ FileExplorer/pull/47}
+\begin{itemize}
+  \item Ultra-fast file explorer using caching and low-level Rust.
+  \item Fixed a poisoned thread issue from multi-threading
+\end{itemize}
+
+\textbf{Supabase SQL Auth UI} \\
+\href{https://github.com/supabase-community/flutter-auth-ui/pull/108}{github $\cdot$ flutter-auth-ui/pull/108}
+\begin{itemize}
+  \item Added options and documentation to the auth UI.
+\end{itemize}
+
+\textbf{LlamaIndex} \\
+\href{https://github.com/run-llama/llama_index/pull/17393}{github $\cdot$ llama\_index/pull/17393}
+\begin{itemize}
+  \item Fixed bugs, added features, improved code quality in the Notion reader.
+\end{itemize}
+
+% ── Achievements ─────────────────────────────────────────────────────────────
+\section{Achievements}
+
+\textbf{Antler VC Build Hackathon}, 1st Place \hfill Jun 2026 \\
+\href{https://www.antler.co/}{antler.co} \quad|\quad \href{https://luma.com/build-the-hackathon?tk=3hiTHC}{Event page}
+\begin{itemize}
+  \item Won 1st place and \$7,500 prize at Antler's two-day build sprint in Sydney.
+  \item Built \href{https://auto-pipeline.dev/}{auto-pipeline.dev} and \href{https://auto-pipeline-app.dev/}{auto-pipeline-app.dev} in 14 hours.
+\end{itemize}
+
+% ── Experience ────────────────────────────────────────────────────────────────
+\section{Experience}
+
+\textbf{KPMG}, AI Engineer \hfill Jun 2025 -- Present \\
+\href{https://kpmg.com/au/en.html}{kpmg.com/au/en.html}
+\begin{itemize}
+  \item AI Prototype Engineer in Futures, working with LLMs and agent frameworks.
+  \item Developed standardised codebase (34k lines) to automate prompting, parsing, validation, and deep research.
+  \item Automated assessment of 10k pages of legislation equivalent.
+  \item Created pipeline for SQL migration and database merging.
+  \item Deployed Transformer models to CUDA GPUs with Hugging Face and Ollama.
+  \item Built autonomous agent system with RLMs; multi-agent and sub-agent implementation.
+  \item \textit{Skills:} Azure, FastAPI, LangChain, LangExtract, Pandas, Docker.
+\end{itemize}
+
+\textbf{Bet Right}, Data Science Intern \hfill Jan 2025 -- Apr 2025 \\
+\href{https://www.linkedin.com/company/bet-right/}{linkedin/bet-right}
+\begin{itemize}
+  \item SQL, Snowflake, Databricks, PowerBI, Azure, DevOps.
+  \item Improved abuse detection ML model by 15--40\% using stacking.
+\end{itemize}
+
+\textbf{DSCubed}, DS/AI Team Vice Head \hfill Nov 2024 -- Jul 2025 \\
+\href{https://www.dscubed.org.au/}{dscubed.org.au}
+\begin{itemize}
+  \item RAG, vector databases, LLM frameworks and APIs.
+  \item Contributed to LlamaIndex open-source project.
+\end{itemize}
+
+\textbf{ARES}, University of Melbourne \hfill 2023 \\
+\href{https://www.linkedin.com/company/aresunimelb}{linkedin/aresunimelb}
+\begin{itemize}
+  \item 3D front-end software for rocket trajectory simulation across supersonic and subsonic speeds.
+\end{itemize}
+
+\textbf{LeetCode:} \href{https://leetcode.com/u/HenryRoutson/}{leetcode.com/u/HenryRoutson}
+
+% ── Projects ──────────────────────────────────────────────────────────────────
+\section{Projects}
+
+\textbf{IT Project} (JS/TS, React) \hfill \href{https://dev-aia.vercel.app/}{dev-aia.vercel.app}
+\begin{itemize}
+  \item Quicksort visualisation; redesigned stack visualisation and improved code quality.
+\end{itemize}
+
+\textbf{LLM Experiments} \hfill \href{https://github.com/HenryRoutson/llm_experiments}{github/llm\_experiments}
+\begin{itemize}
+  \item Transformers, JAX, Keras, PyTorch; combining pre-training and supervised fine-tuning.
+\end{itemize}
+
+\textbf{Auto Avail} (JS/TS) \hfill \href{https://github.com/HenryRoutson/Auto_Avail}{github/Auto\_Avail}
+\begin{itemize}
+  \item when2meet-style scheduler using location data to generate continuous availability periods.
+  \item Stack: Supabase, Flutter, React Native, Postgres, pgTAP, Expo, TypeScript.
+\end{itemize}
+
+\textbf{CHelp} (C) \hfill \href{https://github.com/HenryRoutson/CHelp}{github/CHelp}
+\begin{itemize}
+  \item Valgrind alternative: tracks dynamic allocations and catches memory issues early.
+\end{itemize}
+
+\textbf{Autoheader} (Rust) \hfill \href{https://github.com/HenryRoutson/autoheader}{github/autoheader}
+\begin{itemize}
+  \item Automatically generates C header files.
+\end{itemize}
+
+% ── References ────────────────────────────────────────────────────────────────
+\section{References}
+
+Available upon request.
+\begin{itemize}
+  \item \textbf{Cindy} --- AI Engineer, KPMG. \href{https://www.linkedin.com/in/runxin-liu/}{LinkedIn}
+  \item \textbf{Pranav} --- L3 Data Scientist, NAB. \href{https://www.linkedin.com/in/pranavjayanty/}{LinkedIn}
+\end{itemize}
+
+\end{multicols}
+
+\end{document}
