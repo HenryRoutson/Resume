@@ -1,6 +1,6 @@
-\documentclass[11pt, a4paper]{article}
+\documentclass[10pt, a4paper]{article}
 
-\usepackage[margin=0.55in]{geometry}
+\usepackage[margin=0.48in]{geometry}
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage{titlesec}
@@ -18,11 +18,11 @@
 
 % AI : section formatting - bold rule underline style
 \titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{7pt}{3pt}
+\titlespacing{\section}{0pt}{6pt}{2pt}
 
-\setlist[itemize]{noitemsep, topsep=2pt, leftmargin=1.1em}
+\setlist[itemize]{noitemsep, topsep=1pt, leftmargin=1.05em}
 
-\setlength{\parskip}{3pt}
+\setlength{\parskip}{2pt}
 
 \pagestyle{empty}
 
@@ -30,28 +30,25 @@
 
 % ── Header ──────────────────────────────────────────────────────────────────
 \begin{center}
-  {\LARGE\bfseries Henry Routson} \\[4pt]
-  \href{mailto:Henry_Rou@ProtonMail.com}{Henry\_Rou@ProtonMail.com}
+  {\LARGE\bfseries Henry Routson} \\[3pt]
+  Melbourne, VIC
+  \quad|\quad \href{mailto:Henry_Rou@ProtonMail.com}{Henry\_Rou@ProtonMail.com}
   \quad|\quad 0419 108 859
   \quad|\quad \href{https://www.linkedin.com/in/henryroutson/}{linkedin.com/in/henryroutson}
   \quad|\quad \href{https://github.com/HenryRoutson}{github.com/HenryRoutson}
 \end{center}
 
 \noindent
-Extensive knowledge and experience in modern AI systems and Software Engineering.
-Currently working as an AI Engineer.
+Embedded AI engineer shipping production-grade GenAI: agentic workflows, typed data pipelines, evaluation, and observability. Master's in AI (in progress).
 
-\vspace{2pt}
+\vspace{1pt}
 
 % ── Two-column body ──────────────────────────────────────────────────────────
-\setlength{\columnsep}{14pt}
+\setlength{\columnsep}{12pt}
 \begin{multicols}{2}
 
 % ── Education ────────────────────────────────────────────────────────────────
 \section{Education}
-
-\textbf{The University of Melbourne} \\
-Bachelor of Science, Computing and Software Systems --- \textit{Distinction}
 
 \textbf{The University of Melbourne} \\
 Master of Computer Science, AI --- \textit{in progress, part time}
@@ -59,11 +56,10 @@ Master of Computer Science, AI --- \textit{in progress, part time}
   \item NLP: Fine Tuning, Prompt Tuning, Transformers, Hugging Face
 \end{itemize}
 
-\textbf{Ballarat Grammar}
-\begin{itemize}
-  \item Academic scholarship
-  \item VCE: Software Development, Specialist \& Methods Mathematics, Chemistry, Physics
-\end{itemize}
+\textbf{The University of Melbourne} \\
+Bachelor of Science, Computing and Software Systems --- \textit{\mbox{Distinction}}
+
+\textbf{Ballarat Grammar} --- Academic scholarship; VCE Software Development, Specialist \& Methods Mathematics
 
 % ── Achievements ─────────────────────────────────────────────────────────────
 \section{Achievements}
@@ -71,8 +67,8 @@ Master of Computer Science, AI --- \textit{in progress, part time}
 \textbf{Antler VC Build Hackathon}, 1st Place \hfill Jun 2026 \\
 \href{https://www.antler.co/}{antler.co} \quad|\quad \href{https://luma.com/build-the-hackathon?tk=3hiTHC}{Event page}
 \begin{itemize}
-  \item Won 1st place and \$7,500 prize at Antler's two-day build sprint in Sydney.
-  \item Built \href{https://auto-pipeline.dev/}{auto-pipeline.dev} and \href{https://auto-pipeline-app.dev/}{auto-pipeline-app.dev} in 14 hours.
+  \item Won 1st place and \$7,500 at Antler's two-day Sydney sprint.
+  \item 14-hour prototype of Spine (\href{https://auto-pipeline.dev/}{auto-pipeline.dev} / \href{https://auto-pipeline-app.dev/}{app}).
 \end{itemize}
 
 % ── Experience ────────────────────────────────────────────────────────────────
@@ -81,42 +77,51 @@ Master of Computer Science, AI --- \textit{in progress, part time}
 \textbf{KPMG}, AI Engineer \hfill Jul 2025 -- Present \\
 \href{https://kpmg.com/au/en.html}{kpmg.com/au/en.html}
 \begin{itemize}
-  \item AI Prototype Engineer in Futures, working with LLMs and agent frameworks.
-  \item Developed standardised codebase (34k lines) to automate prompting, parsing, validation, and deep research.
-  \item Automated assessment of 10k pages of legislation equivalent.
-  \item Created pipeline for SQL migration and database merging.
-  \item Deployed Transformer models to CUDA GPUs with Hugging Face and Ollama.
-  \item Built autonomous agent system with RLMs; multi-agent and sub-agent implementation.
-  \item \textit{Skills:} Azure, Ollama, FastAPI, Pydantic, DeepSeek-OCR, Hugging Face, LangChain, LangExtract, Pandas, Docker, Ray, Local model deployment, Recursive Language Models (RLM).
+  \item Embedded AI Prototype Engineer in Futures: technical discovery through production-grade LLM and agent systems.
+  \item Shipped a 34k-line Python platform for prompting, structured parsing, Pydantic validation, and deep research.
+  \item Built pipelines over unstructured and structured data: 10k-page legislative assessment; SQL migration and database merge.
+  \item Multi-agent and hierarchical sub-agent systems with Recursive Language Models (RLM); deployed Transformers on CUDA (Hugging Face, Ollama).
+  \item \textit{Skills:} Python, Azure, FastAPI, Pydantic, LangChain, LangExtract, Hugging Face, Docker, Ray, Pandas, DeepSeek-OCR, Ollama.
 \end{itemize}
 
-\textbf{Antler Australia}, Residency Founder (AS16) \hfill Jul 2026 -- Aug 2026 \\
-\href{https://www.antler.co/location/australia}{antler.co/location/australia}
+\textbf{Spine}, Founder (Antler AS16) \hfill Jul 2026 -- Present \\
+\href{https://www.spine-ai.dev/}{spine-ai.dev} \quad|\quad \href{https://www.antler.co/location/australia}{antler.co/australia}
 \begin{itemize}
-  \item 80 selected from 1,600 applicants for Antler Australia's 16th inception-stage VC residency across Sydney, Melbourne, and Brisbane.
-  \item 10-week full-time program: co-founder matching, idea validation, and pre-seed investment pathway.
+  \item 80 of 1,600 selected for Antler Australia's inception-stage VC residency; shipping Spine as founder-engineer.
+  \item Production GenAI pipeline platform: document ingestion to typed structures (Pydantic/Zod/JSON Schema) to parallel LLM-batch to validated structured output, with step caching.
+  \item Four-surface parity: GUI, CLI/TUI, HTTP APIs, and MCP servers sharing one domain model (projects, pipelines, runs, traces).
+  \item Financial-services templates: bank reconciliation, expense-policy audit, tax workpapers, procurement three-way match, audit sampling, KYC/compliance, Payment Times Reporting (PTR).
+  \item Evaluation and observability: per-step tests (deterministic vs LLM-as-judge), granular tracing (tokens/sec, cost-per-request, latency), prompt profiling, Langfuse export, human-in-the-loop.
+  \item RAG-like quote grounding with source offsets; OCR/PDF/Excel/Word; custom LLM providers; Docker/Supabase deploys; code export (Python, TypeScript, Rust).
+  \item \textit{Skills:} Next.js, TypeScript, Python, Zod, Supabase, Postgres, Docker, OpenRouter (Gemini, DeepSeek), MCP, Langfuse, Stripe.
 \end{itemize}
 
 \textbf{Bet Right}, Data Science Intern \hfill Jan 2025 -- Apr 2025 \\
 \href{https://www.linkedin.com/company/bet-right/}{linkedin/bet-right}
 \begin{itemize}
-  \item SQL, Snowflake, Databricks, PowerBI, Azure, DevOps.
-  \item Improved abuse detection ML model by 15--40\% using stacking.
+  \item Financial-services data stack: SQL, Snowflake, Databricks, PowerBI, Azure, DevOps.
+  \item Improved abuse-detection ML model by 15--40\% using stacking.
 \end{itemize}
 
 \textbf{DSCubed}, DS/AI Team Vice Head \hfill Nov 2024 -- Jul 2025 \\
 \href{https://www.dscubed.org.au/}{dscubed.org.au}
 \begin{itemize}
-  \item RAG, vector databases, LLM frameworks and APIs.
+  \item RAG, vector databases, and LLM APIs for student-facing AI applications.
 \end{itemize}
 
 \textbf{ARES}, TypeScript Developer, University of Melbourne \hfill 2023 \\
 \href{https://www.linkedin.com/company/aresunimelb}{linkedin/aresunimelb}
 \begin{itemize}
-  \item 3D front-end software for rocket trajectory simulation across supersonic and subsonic speeds.
+  \item 3D front-end for rocket trajectory simulation (supersonic and subsonic).
 \end{itemize}
 
-\textbf{LeetCode:} \href{https://leetcode.com/u/HenryRoutson/}{leetcode.com/u/HenryRoutson}
+% ── Technical Skills ──────────────────────────────────────────────────────────
+\section{Technical Skills}
+
+\textbf{GenAI / agents:} multi-agent systems, MCP servers, tool calling, RAG, vector databases, structured extraction, Pydantic, Zod, JSON Schema, schema validation, human-in-the-loop, state management, typed pipelines \\
+\textbf{Eval / observability:} evaluation pipelines, granular tracing, tokens/sec, cost-per-request, latency, Langfuse, prompt profiling, A/B testing, LLM-as-judge \\
+\textbf{Data / cloud:} Python, TypeScript, SQL, Rust, FastAPI, Azure, Docker, Postgres, Snowflake, Databricks, OCR, APIs, CI \\
+\textbf{Financial services AI:} KYC, bank reconciliation, expense audit, tax workpapers, procurement match, PTR, compliance pipelines
 
 % ── Certifications ────────────────────────────────────────────────────────────
 \section{Certifications}
@@ -125,54 +130,30 @@ Master of Computer Science, AI --- \textit{in progress, part time}
 \href{https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/}{learn.microsoft.com}
 
 % ── Open-Source ───────────────────────────────────────────────────────────────
-\section{Open-Source Contributions}
+\section{Open-Source}
 
-\textbf{Cached File Explorer} (Rust) \\
-\href{https://github.com/conaticus/FileExplorer/pull/47}{github $\cdot$ FileExplorer/pull/47}
-\begin{itemize}
-  \item Ultra-fast file explorer using caching and low-level Rust.
-  \item Fixed a poisoned thread issue in a cached file explorer implemented in Rust.
-\end{itemize}
+\textbf{Cached File Explorer} (Rust) --- \href{https://github.com/conaticus/FileExplorer/pull/47}{PR \#47}: poisoned-thread fix; caching / low-level Rust.
 
-\textbf{Supabase SQL Auth UI} \\
-\href{https://github.com/supabase-community/flutter-auth-ui/pull/108}{github $\cdot$ flutter-auth-ui/pull/108}
-\begin{itemize}
-  \item Added options and documentation to the auth UI.
-\end{itemize}
+\textbf{Supabase SQL Auth UI} --- \href{https://github.com/supabase-community/flutter-auth-ui/pull/108}{PR \#108}: options and docs.
 
 % ── Projects ──────────────────────────────────────────────────────────────────
 \section{Projects}
 
-\textbf{IT Project} (JS/TS, React) \hfill \href{https://dev-aia.vercel.app/}{dev-aia.vercel.app}
-\begin{itemize}
-  \item Quicksort visualisation; redesigned stack visualisation and improved code quality.
-\end{itemize}
-
 \textbf{LLM Experiments} \hfill \href{https://github.com/HenryRoutson/llm_experiments}{github/llm\_experiments}
 \begin{itemize}
-  \item Transformers, JAX, Keras, PyTorch; combining pre-training and supervised fine-tuning.
+  \item Transformers, JAX, Keras, PyTorch; pre-training plus supervised fine-tuning.
 \end{itemize}
 
-\textbf{Auto Avail} (JS/TS) \hfill \href{https://github.com/HenryRoutson/Auto_Avail}{github/Auto\_Avail}
+\textbf{Auto Avail} (TypeScript) \hfill \href{https://github.com/HenryRoutson/Auto_Avail}{github/Auto\_Avail}
 \begin{itemize}
-  \item when2meet-style scheduler using location data to generate continuous availability periods.
-  \item Stack: Supabase, Flutter, React Native, Postgres, pgTAP, Expo, TypeScript.
+  \item Location-aware scheduler. Supabase, Flutter, React Native, Postgres, pgTAP, Expo.
 \end{itemize}
 
-\textbf{CHelp} (C) \hfill \href{https://github.com/HenryRoutson/CHelp}{github/CHelp}
-\begin{itemize}
-  \item Valgrind alternative: tracks dynamic allocations and catches memory issues early.
-\end{itemize}
-
-\textbf{Autoheader} (Rust) \hfill \href{https://github.com/HenryRoutson/autoheader}{github/autoheader}
-\begin{itemize}
-  \item Automatically generates C header files.
-\end{itemize}
+\textbf{LeetCode:} \href{https://leetcode.com/u/HenryRoutson/}{leetcode.com/u/HenryRoutson}
 
 % ── References ────────────────────────────────────────────────────────────────
 \section{References}
 
-Available upon request.
 \begin{itemize}
   \item \textbf{Cindy} --- AI Engineer, KPMG. \href{https://www.linkedin.com/in/runxin-liu/}{LinkedIn}
   \item \textbf{Pranav} --- L3 Data Scientist, NAB. \href{https://www.linkedin.com/in/pranavjayanty/}{LinkedIn}
